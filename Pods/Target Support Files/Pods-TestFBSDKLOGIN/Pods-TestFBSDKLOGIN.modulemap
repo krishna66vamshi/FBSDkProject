@@ -1,0 +1,6 @@
+framework module Pods_TestFBSDKLOGIN {
+  umbrella header "Pods-TestFBSDKLOGIN-umbrella.h"
+
+  export *
+  module * { export * }
+}
