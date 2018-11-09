@@ -22,9 +22,42 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-       
+        firstWay()
+
+        if FBSDKAccessToken.currentAccessTokenIsActive(){
+            print("Logged in")
+            fetchProfile()
+
+            
+        }else{
+            print("Logged out")
+        }
+        if FBSDKAccessToken.current() != nil{
+            print("Logged in")
+            fetchProfile()
+
+        }else{
+            print("Logged out")
+        }
         
-       
+        
+    }
+    
+    func fetchProfile(){
+        
+        let parameters = ["fields":"email,first_name,last_name,picture.type(large)"]
+        FBSDKGraphRequest(graphPath: "me", parameters: parameters).start { (connection, result, error) in
+            if error != nil{
+                print(error)
+                return
+            }
+            
+//            if let email = result!["email"] as! String{
+//                print(email)
+//            }
+            
+            print(result)
+        }
         
     }
     
@@ -58,13 +91,18 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
         let loginBtn = FBSDKLoginButton()
         loginBtn.delegate = self
         loginBtn.center = self.view.center
-        loginBtn.readPermissions = ["public_profile","email"]
+        loginBtn.readPermissions = ["email"]
         
         self.view.addSubview(loginBtn)
         
     }
     
     @IBAction func onCustomLoginBtnTapped(_ sender: Any) {
+        
+        
+        
+        
+        
         
      loginManagerObj.logIn(readPermissions: [.publicProfile,.email], viewController: self)
         {

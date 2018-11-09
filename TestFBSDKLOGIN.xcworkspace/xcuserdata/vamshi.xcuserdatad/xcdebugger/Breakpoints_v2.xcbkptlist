@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestFBSDKLOGIN/ViewController.swift"
+            timestampString = "563477554.588873"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "fetchProfile()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestFBSDKLOGIN.ViewController.fetchProfile() -&gt; ()"
+                  moduleName = "TestFBSDKLOGIN"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vamshi/Documents/MyAllProjects/NewPracticedNov8/TestFBSDKLOGIN/TestFBSDKLOGIN/ViewController.swift"
+                  timestampString = "563477554.735402"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "195">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.FBSDKGraphRequestConnection&gt;, Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestFBSDKLOGIN.ViewController.fetchProfile() -&gt; ()"
+                  moduleName = "TestFBSDKLOGIN"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vamshi/Documents/MyAllProjects/NewPracticedNov8/TestFBSDKLOGIN/TestFBSDKLOGIN/ViewController.swift"
+                  timestampString = "563477554.7389261"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
